@@ -28,6 +28,9 @@ Humanizer Pro is designed to work across multiple ecosystems:
 - **OpenCode & Codex**: Fully compatible prompt structure
 - **Claude.ai Web UI**: Copy the contents of `CLAUDE_WEB.md` as a Custom Instruction
 - **Gemini**: Supported as a pre-prompt instruction set
+- **Android**: Installable via Termux with Node.js bridging (Issue #13)
+- **Skillshare & AIX**: Fully supported distribution (PR #28)
+- **AdaL**: Official installation instructions available (Issue #33)
 
 ## Usage
 
@@ -44,6 +47,16 @@ Or ask the agent to humanize text directly:
 ```
 Please humanize this text using the Creative mode: [your text]
 ```
+
+## SOTA Tiered Architecture (v3.0.0+)
+
+Humanizer Pro now utilizes a state-of-the-art **Tiered Architecture** for AI detection, providing modular skill fragments for granular text analysis (PR #30, #31). 
+
+### Advanced Modules & Ablations
+You can seamlessly integrate this skill with **Heretic deslop-ablation** methodologies (Issue #50) to scrub highly resistant AI watermarks. For researchers, a complete **Signs of AI Writing Research Matrix** is available for cross-referencing model tendencies (PR #27).
+
+> [!WARNING]
+> Because Humanizer Pro fundamentally rewrites structural prose, some extremely aggressive detectors (like GPTZero) may occasionally flag *completely human, non-AI text* as AI after processing if the source material was already highly sterile (Issue #2). Use your best judgment.
 
 ## Overview
 
