@@ -1,6 +1,6 @@
-# Humanizer
+# Humanizer Pro (V3): The Ultimate AI Detection & Rewrite Skill
 
-A Claude Code skill that removes signs of AI-generated writing from text, making it sound more natural and human.
+A powerful, cross-platform skill that removes signs of AI-generated writing from text, making it sound more natural and human. Optimized for advanced agent frameworks. This acts as a robust AI detection and prompt optimization tool.
 
 ## Installation
 
@@ -20,20 +20,29 @@ mkdir -p ~/.claude/skills/humanizer
 cp SKILL.md ~/.claude/skills/humanizer/
 ```
 
+## Supported Frameworks & Integrations
+
+Humanizer Pro is designed to work across multiple ecosystems:
+- **Claude Code**: Native support via `SKILL.md`
+- **Antigravity**: Native support via `.agents/skills`
+- **OpenCode & Codex**: Fully compatible prompt structure
+- **Claude.ai Web UI**: Copy the contents of `CLAUDE_WEB.md` as a Custom Instruction
+- **Gemini**: Supported as a pre-prompt instruction set
+
 ## Usage
 
-In Claude Code, invoke the skill:
+In Claude Code or Antigravity, invoke the skill and optionally specify a Mode (Aggressive, Light, Creative):
 
 ```
-/humanizer
+/humanizer [Mode]
 
 [paste your text here]
 ```
 
-Or ask Claude to humanize text directly:
+Or ask the agent to humanize text directly:
 
 ```
-Please humanize this text: [your text]
+Please humanize this text using the Creative mode: [your text]
 ```
 
 ## Overview
@@ -46,7 +55,7 @@ The skill also includes a final "obviously AI generated" audit pass and a second
 
 > "LLMs use statistical algorithms to guess what should come next. The result tends toward the most statistically likely result that applies to the widest variety of cases."
 
-## 28 Patterns Detected (with Before/After Examples)
+## 32 Patterns Detected (with Before/After Examples)
 
 ### Content Patterns
 
@@ -69,6 +78,8 @@ The skill also includes a final "obviously AI generated" audit pass and a second
 | 10 | **Rule of three** | "innovation, inspiration, and insights" | Use natural number of items |
 | 11 | **Synonym cycling** | "protagonist... main character... central figure... hero" | "protagonist" (repeat when clearest) |
 | 12 | **False ranges** | "from the Big Bang to dark matter" | List topics directly |
+| 29 | **Over-Hyphenation** | "highly-anticipated model" | "highly anticipated model" |
+| 30 | **AI Single Quotes** | "operates in 'silent mode'" | Use standard double quotes |
 
 ### Style Patterns
 
@@ -88,6 +99,8 @@ The skill also includes a final "obviously AI generated" audit pass and a second
 | 19 | **Chatbot artifacts** | "I hope this helps! Let me know if..." | Remove entirely |
 | 20 | **Cutoff disclaimers** | "While details are limited in available sources..." | Find sources or remove |
 | 21 | **Sycophantic tone** | "Great question! You're absolutely right!" | Respond directly |
+| 31 | **Persuasive Tropes** | "Imagine a world where..." | Eliminate false urgency |
+| 32 | **Fragmented Headers** | "- **Security:** Security improved" | Combine into flowing prose |
 
 ### Filler and Hedging
 
