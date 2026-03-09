@@ -28,13 +28,37 @@ Then, simply invoke the skill in your terminal:
 
 ## 🎭 See It In Action (Before & After)
 
-Why do you need Humanizer Pro? Because standard LLM outputs are obvious, sterile, and boring. Here is exactly how our 32-pattern matrix cleans up modern AI text.
+Why do you need Humanizer Pro? Because standard LLM outputs are obvious, sterile, and boring. Here is exactly how our 32-pattern matrix cleans up modern AI text across multiple scenarios.
 
-### 🔴 Before: Raw AI Output
+### Example 1: Technical Writing
+**🔴 Before: Raw AI Output**
 > "As an AI language model, it is important to note that the adoption of serverless architecture is a pivotal moment in cloud computing. Let's delve into the specifics: it fundamentally serves as a testament to the intricate dance between scalability and cost-efficiency. Currently, organizations face a mosaic of challenges in deployment. Moreover, managing these dynamic environments requires a delicate balance. Ultimately, the future looks bright as teams continue to foster innovation and navigate this evolving landscape."
 
-### 🟢 After: Humanizer Pro (Aggressive Mode)
-> "Serverless architecture improves cloud computing by lowering costs and simplifying scaling. Deploying to these environments still presents challenges for developers, but it is becoming an industry standard for new applications."
+**What went wrong here?**
+* **Meta-commentary:** "As an AI language model..."
+* **The "Delve" virus:** "Let's delve into the specifics..."
+* **Significance inflation:** "pivotal moment", "serves as a testament"
+* **Metaphor overload:** "intricate dance", "mosaic of challenges", "delicate balance"
+* **Forced transitions:** "Moreover...", "Ultimately..."
+
+**🟢 After: Humanizer Pro (Aggressive Mode)**
+> "Serverless architecture improves cloud computing by lowering costs and simplifying scaling. Deploying to these environments still presents challenges for developers, but it is quickly becoming an industry standard for new applications."
+
+---
+
+### Example 2: Professional Email Context
+**🔴 Before: Raw AI Output**
+> "I hope this email finds you well! I wanted to touch base regarding the highly-anticipated 'Project Phoenix'. Imagine a world where our Q3 deliverables are entirely automated. It's not just about speed; it's about unparalleled efficiency. Please find the attached documentation outlining our next steps. I hope this helps! Let me know if you need any further clarification."
+
+**What went wrong here?**
+* **Over-hyphenation:** "highly-anticipated"
+* **AI single quotes:** "'Project Phoenix'"
+* **Persuasive Tropes:** "Imagine a world where..."
+* **Negative parallelisms:** "It's not just about X; it's about Y."
+* **Chatbot artifacts:** "I hope this helps! Let me know if..."
+
+**🟢 After: Humanizer Pro (Standard Mode)**
+> "I wanted to check in on Project Phoenix. If we automate the Q3 deliverables, we can significantly improve our efficiency. I've attached the documentation with our next steps. Let me know what you think."
 
 ---
 
