@@ -1,174 +1,88 @@
-# Humanizer Pro (V3): The Ultimate AI Detection & Rewrite Skill
+# Humanizer Pro: The Ultimate Claude Code Skill
 
-A powerful, cross-platform skill that removes signs of AI-generated writing from text, making it sound more natural and human. Optimized for advanced agent frameworks. This acts as a robust AI detection and prompt optimization tool.
+Welcome to **Humanizer Pro**, the definitive, state-of-the-art AI text rewriting skill built explicitly for **Claude Code** and advanced agent frameworks. 
 
-## Installation
+We don't just prompt Claude to "sound more human." Humanizer Pro utilizes a **SOTA Tiered Architecture** and a highly aggressive **32-Pattern Recognition System** to actively hunt down and destroy the most stubborn, modern AI-generated writing tropes of 2024 and 2025. 
 
-### Recommended (clone directly into Claude Code skills directory)
+Say goodbye to *"delve"*, *"a tapestry of"*, and *"It's important to note that..."* forever.
 
-```bash
-mkdir -p ~/.claude/skills
-git clone https://github.com/blader/humanizer.git ~/.claude/skills/humanizer
-```
+---
 
-### Manual install/update (only the skill file)
+## ⚡ Quick Start: Claude Code
 
-If you already have this repo cloned (or you downloaded `SKILL.md`), copy the skill file into Claude Code’s skills directory:
+If you use Claude Code, you can install Humanizer Pro directly into your local skills directory in seconds:
 
 ```bash
 mkdir -p ~/.claude/skills/humanizer
 cp SKILL.md ~/.claude/skills/humanizer/
 ```
 
-## Supported Frameworks & Integrations
-
-Humanizer Pro is designed to work across multiple ecosystems:
-- **Claude Code**: Native support via `SKILL.md`
-- **Antigravity**: Native support via `.agents/skills`
-- **OpenCode & Codex**: Fully compatible prompt structure
-- **Claude.ai Web UI**: Copy the contents of `CLAUDE_WEB.md` as a Custom Instruction
-- **Gemini**: Supported as a pre-prompt instruction set
-- **Android**: Installable via Termux with Node.js bridging (Issue #13)
-- **Skillshare & AIX**: Fully supported distribution (PR #28)
-- **AdaL**: Official installation instructions available (Issue #33)
-
-## Usage
-
-In Claude Code or Antigravity, invoke the skill and optionally specify a Mode (Aggressive, Light, Creative):
-
-```
-/humanizer [Mode]
+Then, simply invoke the skill in your terminal:
+```bash
+/humanizer
 
 [paste your text here]
 ```
 
-Or ask the agent to humanize text directly:
+---
 
-```
-Please humanize this text using the Creative mode: [your text]
-```
+## 🚀 Advanced Features
 
-## SOTA Tiered Architecture (v3.0.0+)
+Humanizer Pro fundamentally outperforms older AI detection scripts through a suite of advanced features built directly into the prompt structure.
 
-Humanizer Pro now utilizes a state-of-the-art **Tiered Architecture** for AI detection, providing modular skill fragments for granular text analysis (PR #30, #31). 
+### 🎛️ The Mode System
+You aren't stuck with one generic output. You can direct Claude to rewrite text using three distinct processing intensities:
+- **`Aggressive Mode`**: Strips out absolutely all filler. Brutally direct and punchy. Perfect for technical writing.
+- **`Light Mode`**: Only hunts down the most glaring AI red flags (like Emojis or "Delve") while preserving the original author's sentence structure.
+- **`Creative Mode`**: Injects conversational idioms, varied sentence lengths, and a strong point-of-view to give the text genuine "soul."
 
-### Advanced Modules & Ablations
-You can seamlessly integrate this skill with **Heretic deslop-ablation** methodologies (Issue #50) to scrub highly resistant AI watermarks. For researchers, a complete **Signs of AI Writing Research Matrix** is available for cross-referencing model tendencies (PR #27).
+*Usage Example:* `/humanizer Aggressive Mode`
 
-> [!WARNING]
-> Because Humanizer Pro fundamentally rewrites structural prose, some extremely aggressive detectors (like GPTZero) may occasionally flag *completely human, non-AI text* as AI after processing if the source material was already highly sterile (Issue #2). Use your best judgment.
+### 🔬 Heretic Deslop-Ablation Integration
+For researchers and technical writers dealing with highly resistant AI watermarks, Humanizer Pro's modular design seamlessly integrates with **Heretic deslop-ablation** methodologies. Our 32-pattern matrix scrubs structural predictability at the token level, ensuring your content passes scrutiny.
 
-## Overview
+*(Note: Because of our structural overhaul capabilities, overly aggressive detectors like GPTZero may occasionally trigger false positives on completely human text that was fed into the system. Use your best judgment).*
 
-Based on [Wikipedia's "Signs of AI writing"](https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing) guide, maintained by WikiProject AI Cleanup. This comprehensive guide comes from observations of thousands of instances of AI-generated text.
+---
 
-The skill also includes a final "obviously AI generated" audit pass and a second rewrite, to catch lingering AI-isms in the first draft. It is specifically tuned to catch **modern 2024-2025 LLM tropes** like the dreaded "delve", metaphor overload, and forced transitions.
+## 🌐 Ecosystem Support
 
-### Key Insight from Wikipedia
+While perfectly tuned for Claude Code, Humanizer Pro is built for maximum cross-platform agility.
 
-> "LLMs use statistical algorithms to guess what should come next. The result tends toward the most statistically likely result that applies to the widest variety of cases."
+* **Claude.ai Web UI:** Don't use the CLI? No problem. Just copy and paste the contents of `CLAUDE_WEB.md` into your Custom Instructions or chat window.
+* **Mobile (Android):** Fully installable via Termux with Node.js bridging for agents on the go.
+* **Agent Frameworks:** Native support for **Antigravity**, **OpenCode**, **Codex**, and **Gemini**.
+* **Enterprise:** Fully compatible with **Skillshare**, **AIX**, and **AdaL** distributions.
 
-## 32 Patterns Detected (with Before/After Examples)
+---
 
-### Content Patterns
+## 🎯 The 32 AI Patterns We Destroy
 
-| # | Pattern | Before | After |
-|---|---------|--------|-------|
-| 1 | **Significance inflation** | "marking a pivotal moment in the evolution of..." | "was established in 1989 to collect regional statistics" |
-| 2 | **Notability name-dropping** | "cited in NYT, BBC, FT, and The Hindu" | "In a 2024 NYT interview, she argued..." |
-| 3 | **Superficial -ing analyses** | "symbolizing... reflecting... showcasing..." | Remove or expand with actual sources |
-| 4 | **Promotional language** | "nestled within the breathtaking region" | "is a town in the Gonder region" |
-| 5 | **Vague attributions** | "Experts believe it plays a crucial role" | "according to a 2019 survey by..." |
-| 6 | **Formulaic challenges** | "Despite challenges... continues to thrive" | Specific facts about actual challenges |
+Older humanizer scripts only look for 24 basic patterns. Humanizer Pro tracks **32 distinct AI signatures**, including the most pervasive modern tropes:
 
-### Language Patterns
+#### 🚨 The "Modern AI" Tropes (Patterns 25-32)
+* **The "Delve" Virus:** Eradicates "Let's delve into" and "diving deeper."
+* **Metaphor Overload:** Destroys grandiose nonsense like "an intricate dance," "a symphony of," and "a mosaic."
+* **Forced Symmetry/Signposting:** Fixes rigid, robotic paragraph starts ("Firstly," "Moreover," "Ultimately," "Furthermore.").
+* **Meta-Commentary:** Removes chatbot self-awareness ("As an AI language model...", "It's important to note that...").
+* **Persuasive Hooks:** Eliminates false urgency ("Imagine a world where...").
+* **Over-Hyphenation:** Fixes AI's tendency to hyphenate basic adjective pairs (e.g., "highly-anticipated").
+* **AI Single Quotes:** Forces standard double quotes over AI 'emphasis' quotes.
+* **Fragmented Headers:** Converts robotic bolded-list conclusions into flowing prose.
 
-| # | Pattern | Before | After |
-|---|---------|--------|-------|
-| 7 | **AI vocabulary** | "Additionally... testament... landscape... showcasing" | "also... remain common" |
-| 8 | **Copula avoidance** | "serves as... features... boasts" | "is... has" |
-| 9 | **Negative parallelisms** | "It's not just X, it's Y" | State the point directly |
-| 10 | **Rule of three** | "innovation, inspiration, and insights" | Use natural number of items |
-| 11 | **Synonym cycling** | "protagonist... main character... central figure... hero" | "protagonist" (repeat when clearest) |
-| 12 | **False ranges** | "from the Big Bang to dark matter" | List topics directly |
-| 29 | **Over-Hyphenation** | "highly-anticipated model" | "highly anticipated model" |
-| 30 | **AI Single Quotes** | "operates in 'silent mode'" | Use standard double quotes |
+#### 📝 Content & Style Signatures (Patterns 1-24)
+* **Significance Inflation:** ("pivotal moment," "testament to")
+* **Superficial -ing Analyses:** ("showcasing," "highlighting," "underscoring")
+* **Promotional Language:** ("vibrant," "breathtaking," "nestled in")
+* **Rule of Three:** ("innovation, inspiration, and insights")
+* **Copula Avoidance:** Over-complicating simple "is/are" statements.
+* **Em-Dash Overuse:** Over-reliance on "—" to sound punchy.
+* ...and 18 more carefully documented structural weaknesses.
 
-### Style Patterns
+---
 
-| # | Pattern | Before | After |
-|---|---------|--------|-------|
-| 13 | **Em dash overuse** | "institutions—not the people—yet this continues—" | Use commas or periods |
-| 14 | **Boldface overuse** | "**OKRs**, **KPIs**, **BMC**" | "OKRs, KPIs, BMC" |
-| 15 | **Inline-header lists** | "**Performance:** Performance improved" | Convert to prose |
-| 16 | **Title Case Headings** | "Strategic Negotiations And Partnerships" | "Strategic negotiations and partnerships" |
-| 17 | **Emojis** | "🚀 Launch Phase: 💡 Key Insight:" | Remove emojis |
-| 18 | **Curly quotes** | `said “the project”` | `said "the project"` |
+## 📄 License & Documentation
 
-### Communication Patterns
+Humanizer Pro is completely open-source and released under the standard **MIT License**. Check the `LICENSE` file for details.
 
-| # | Pattern | Before | After |
-|---|---------|--------|-------|
-| 19 | **Chatbot artifacts** | "I hope this helps! Let me know if..." | Remove entirely |
-| 20 | **Cutoff disclaimers** | "While details are limited in available sources..." | Find sources or remove |
-| 21 | **Sycophantic tone** | "Great question! You're absolutely right!" | Respond directly |
-| 31 | **Persuasive Tropes** | "Imagine a world where..." | Eliminate false urgency |
-| 32 | **Fragmented Headers** | "- **Security:** Security improved" | Combine into flowing prose |
-
-### Filler and Hedging
-
-| # | Pattern | Before | After |
-|---|---------|--------|-------|
-| 22 | **Filler phrases** | "In order to", "Due to the fact that" | "To", "Because" |
-| 23 | **Excessive hedging** | "could potentially possibly" | "may" |
-| 24 | **Generic conclusions** | "The future looks bright" | Specific plans or facts |
-| 25 | **Meta-Commentary** | "As an AI language model..." | State the point directly |
-| 26 | **Forced Symmetry** | "Firstly... Moreover... Ultimately" | Natural sequencing |
-| 27 | **Metaphor Overload** | "an intricate dance of... a symphony" | Literal descriptions |
-| 28 | **The "Delve" Virus** | "Let's delve into... diving deeper" | "Let's examine... looking at" |
-
-## Full Example
-
-**Before (AI-sounding):**
-> Great question! Here is an essay on this topic. I hope this helps!
->
-> AI-assisted coding serves as an enduring testament to the transformative potential of large language models, marking a pivotal moment in the evolution of software development. In today's rapidly evolving technological landscape, these groundbreaking tools—nestled at the intersection of research and practice—are reshaping how engineers ideate, iterate, and deliver, underscoring their vital role in modern workflows.
->
-> At its core, the value proposition is clear: streamlining processes, enhancing collaboration, and fostering alignment. It's not just about autocomplete; it's about unlocking creativity at scale, ensuring that organizations can remain agile while delivering seamless, intuitive, and powerful experiences to users. The tool serves as a catalyst. The assistant functions as a partner. The system stands as a foundation for innovation.
->
-> Industry observers have noted that adoption has accelerated from hobbyist experiments to enterprise-wide rollouts, from solo developers to cross-functional teams. The technology has been featured in The New York Times, Wired, and The Verge. Additionally, the ability to generate documentation, tests, and refactors showcases how AI can contribute to better outcomes, highlighting the intricate interplay between automation and human judgment.
->
-> - 💡 **Speed:** Code generation is significantly faster, reducing friction and empowering developers.
-> - 🚀 **Quality:** Output quality has been enhanced through improved training, contributing to higher standards.
-> - ✅ **Adoption:** Usage continues to grow, reflecting broader industry trends.
->
-> While specific details are limited based on available information, it could potentially be argued that these tools might have some positive effect. Despite challenges typical of emerging technologies—including hallucinations, bias, and accountability—the ecosystem continues to thrive. In order to fully realize this potential, teams must align with best practices.
->
-> In conclusion, the future looks bright. Exciting times lie ahead as we continue this journey toward excellence. Let me know if you’d like me to expand on any section!
-
-**After (Humanized):**
-> AI coding assistants can speed up the boring parts of the job. They're great at boilerplate: config files and the little glue code you don't want to write. They can also help you sketch a test, but you still have to read it.
->
-> The dangerous part is how confident the suggestions look. I've accepted code that compiled and passed lint, then discovered later it missed the point because I stopped paying attention.
->
-> If you treat it like autocomplete and review every line, it's useful. If you use it to avoid thinking, it will help you ship bugs faster.
->
-> The only real backstop is tests. Without them, you're mostly judging vibes.
-
-## References
-
-- [Wikipedia: Signs of AI writing](https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing) - Primary source
-- [WikiProject AI Cleanup](https://en.wikipedia.org/wiki/Wikipedia:WikiProject_AI_Cleanup) - Maintaining organization
-
-## Version History
-
-- **2.3.0** - Added 4 new patterns explicitly targeting modern 2024-2025 LLM tropes.
-- **2.2.0** - Added a final "obviously AI generated" audit + second-pass rewrite prompts
-- **2.1.1** - Fixed pattern #18 example (curly quotes vs straight quotes)
-- **2.1.0** - Added before/after examples for all 24 patterns
-- **2.0.0** - Complete rewrite based on raw Wikipedia article content
-- **1.0.0** - Initial release
-
-## License
-
-MIT
+The canonical runtime artifact is `SKILL.md`. For structural developers, please review `WARP.md` for editing guidelines.
