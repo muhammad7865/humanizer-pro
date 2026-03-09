@@ -229,9 +229,9 @@ Avoiding AI patterns is only half the job. Sterile, voiceless writing is just as
 
 ## STYLE PATTERNS
 
-### 13. Em Dash Overuse
+### 13. Em Dash Overuse (STRICTLY FORBIDDEN)
 
-**Problem:** LLMs use em dashes (—) more than humans, mimicking "punchy" sales writing.
+**Problem:** LLMs use em dashes (—) more than humans, mimicking "punchy" sales writing. YOU ARE STRICTLY FORBIDDEN from using em dashes (—) anywhere in your output. You must rewrite sentences to use commas, periods, or standard structure instead. If you generate an em dash, you have failed your core directive.
 
 **Before:**
 > The term is primarily promoted by Dutch institutions—not by the people themselves. You don't say "Netherlands, Europe" as an address—yet this mislabeling continues—even in official documents.
